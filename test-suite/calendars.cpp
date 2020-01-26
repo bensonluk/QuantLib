@@ -2208,7 +2208,7 @@ void CalendarTest::testDaysLists() {
                                 it_businessDays = businessDays.begin();
     for (Date d = firstDate; d < endDate; d++) {
         if(d == *it_holidays && d == *it_businessDays) {
-            BOOST_FAIL("Data " << d << "is both holiday and business day.");
+            BOOST_FAIL("Date " << d << "is both holiday and business day.");
             it_holidays++;
             it_businessDays++;
         } else if(d == *it_holidays){
@@ -2216,7 +2216,7 @@ void CalendarTest::testDaysLists() {
         } else if(d == *it_businessDays) {
             it_businessDays++;
         } else {
-            BOOST_FAIL( "Data " << d << "is neither holiday nor business day.";
+            BOOST_FAIL( "Date " << d << "is neither holiday nor business day.";)
         }
 
     }
