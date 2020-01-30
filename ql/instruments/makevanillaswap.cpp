@@ -213,6 +213,11 @@ namespace QuantLib {
         return *this;
     }
 
+    MakeVanillaSwap& MakeVanillaSwap::withForwardStart(const Period& fs) {
+        forwardStart_ = fs;
+        return *this;
+    }
+
     MakeVanillaSwap& MakeVanillaSwap::withSettlementDays(Natural settlementDays) {
         settlementDays_ = settlementDays;
         effectiveDate_ = Date();
