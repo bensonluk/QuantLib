@@ -49,6 +49,7 @@ namespace QuantLib {
         MakeVanillaSwap& receiveFixed(bool flag = true);
         MakeVanillaSwap& withType(VanillaSwap::Type type);
         MakeVanillaSwap& withNominal(Real n);
+        MakeVanillaSwap& withForwardStart(const Period& fs);
 
         MakeVanillaSwap& withSettlementDays(Natural settlementDays);
         MakeVanillaSwap& withEffectiveDate(const Date&);
